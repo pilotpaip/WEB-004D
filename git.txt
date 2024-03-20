@@ -4,10 +4,18 @@ echo "# WEB-004D" >> README.md
 git init								-- CREA LA CARPETA
 git add README.md							-- TRACKEA		
 git commit -m "first commit"						-- GUARDADO	
+
 -- GITHUB
 git remote add origin https://github.com/pilotpaip/WEB-004D.git		-- EJECUTA 1 VEZ
-git branch -M main							
-git push -u origin main
+git branch -M main							-- ELEGIR BRANCH							
+git push -u origin main							-- PUSH A GITHUB
+
 -- INICIO
 git config --global user.email "fe.berrios@duocuc.cl"
 git config --global user.name "pilotpaip"
+
+-- MODIFICA O AGREGAN COSAS
+git add .
+git commit -m "se añadió git.txt"
+git branch -M main
+git push -u origin main
