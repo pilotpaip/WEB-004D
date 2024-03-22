@@ -10,7 +10,12 @@
 body {
     font-family: 'Inter';
 }
+
 nav {
+    list-style: none;
+}
+
+li {
     list-style: none;
 }
 
@@ -38,11 +43,11 @@ header {
     padding: 35px 100px;
 }
 
-/**/
-
-.logo img{
-    height: 100px;
+ul {
+    list-style: none;
 }
+
+/**/
 
 header nav{
     display: -webkit-flex;
@@ -54,6 +59,249 @@ header nav{
 
 header nav li{
     margin: 0 10px;
+}
+
+section {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+/* CLASES */
+.logo img{
+    height: 100px;
+}
+
+.banner {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+    color: white;
+}
+
+.banner .banner-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .banner-img::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: .450;
+}
+
+.banner h1{
+    margin-top: 13.33%;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.banner a.banner-btn {
+    text-transform: uppercase;
+    background: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.deporte-contenido {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.deporte-titulo {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.deporte-contenido li {
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.deporte-izq {
+    background-image: url("../img/test.jpg");
+    background-size: 100%;
+    flex-basis: 40%;
+}
+
+.deporte-der {
+    flex-basis: 60%;
+}
+
+.deporte-contenido p{
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-left: 0;
+}
+
+.deporte-contenido h2{
+    margin-bottom: 2%;
+}
+
+.deporte-btn {
+    text-transform: uppercase;
+    background-color: black;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.participante-contenido {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.participante-titulo {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.participante-contenido li {
+    padding: 20px;
+    height: 300px;
+    background-size: cover;
+    background-clip: content-box;
+    background-position: center;
+}
+
+.participante-izq {
+    background-image: url("../img/img-atleta.jpeg");
+    background-size: 100%;
+    flex-basis: 40%;
+}
+
+.participante-der {
+    flex-basis: 60%;
+}
+
+.participante-contenido p{
+    margin-bottom: 30px;
+    text-align: justify;
+    padding-left: 0;
+}
+
+.participante-contenido h2{
+    margin-bottom: 2%;
+}
+
+.participante-btn {
+    text-transform: uppercase;
+    background-color: black;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+
+.medallas {
+    color: white;
+    background-color: black;
+}
+
+.medallas-contenido {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.medallas-contenido li{
+    flex-basis: 33%;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.medallas-titulo {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.medallas-contenido li h4{
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+.medallas-contenido li p{
+    text-align: justify;
+}
+
+
+/* MEDIA */
+@media(max-width: 600px) {
+    .medallas-contenido li {
+        flex-basis: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width: 600px) {
+    .banner h1{
+        font-size: 30px;
+    }
+    
+    .banner a.banner-btn {
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+}
+
+@media(max-width: 600px) {
+    section {
+        padding: 100px 50px;
+    }
 }
 
 @media(max-width:1000px) {
@@ -71,34 +319,12 @@ header nav li{
     }
 }
 
-/* BANNER */
-.banner {
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    min-height: 80vh;
-    color: white;
-}
+@media(max-width: 600px) {
+    .deporte-der .deporte-izq {
+        flex-basis: 100%;
+    }
 
-.banner .banner-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-image: url("../img/banner.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.banner .banner-img::after{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    content: '';
-    opacity: .450;
+    .deporte-der {
+        text-align: center;
+    }
 }

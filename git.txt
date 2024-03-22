@@ -16,6 +16,9 @@ git config --global user.name "pilotpaip"
 
 -- MODIFICA O AGREGAN COSAS
 git add .
-git commit -m "se añadió git.txt"
+git commit -m "modificado git.txt"
 git branch -M main
 git push -u origin main
+
+-- CLONAR
+git clone https://github.com/pilotpaip/WEB-004D.git
