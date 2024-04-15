@@ -6,140 +6,193 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>PADILLA Y ASOCIADOS</title>
+    <title>Taller BCP Inc. - Inicio</title>
 </head>
 <body>
-    
-    <!--INICIO NAV-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="javascript:void(0)">Padilla</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#jumbo-nosotros">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)">Mecanicos</a>
-              </li>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ingresar</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myModal_inicio">Inicio sesion</a></li>
-                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myModal_registro">Registrarse</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Mecanico o Servicio">
-              <button class="btn btn-primary" type="button">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <!--FIN NAV-->
 
-    
+  <!--INICIO NAV-->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a href="index.html"><img src="img/icon_taller.png" width="30px"/></a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#jumbo-nosotros">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nuestros-servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nuestros-mecanicos">Mecánicos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario-contacto.html">Contacto</a>
+          </li>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ingresar</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myModal_inicio">Inicio sesion</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myModal_registro">Registrarse</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Mecanico o Servicio">
+          <button class="btn btn-primary" type="button">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--FIN NAV-->
 
     <!--INICIO CARRUSEL-->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-        </div>
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- INDICADORES-->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div>
         
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://via.placeholder.com/1200x400" alt="electronica" class="d-block" style="width:100%">
-            <div class="carousel-caption">
-              <h3>MECÁNICO 1</h3>
-              <p>Especialista en electrónica automotriz</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://via.placeholder.com/1200x400" alt="caja cambio" class="d-block" style="width:100%">
-            <div class="carousel-caption">
-              <h3>MECÁNICO 2</h3>
-              <p> Especialista en cajas de cambio</p>
-            </div> 
-          </div>
-          <div class="carousel-item">
-            <img src="https://via.placeholder.com/1200x400" alt="suspencion" class="d-block" style="width:100%">
-            <div class="carousel-caption">
-              <h3>MECÁNICO 3</h3>
-              <p>Especialista en suspensión y dirección</p>
-            </div>  
-          </div>
-          <div class="carousel-item">
-            <img src="https://via.placeholder.com/1200x400" alt="general" class="d-block" style="width:100%">
-            <div class="carousel-caption">
-              <h3>SERVICIOS GENERALES</h3>
-              <p>Todo lo que tú auto necesita lo encuentras aquí</p>
-            </div>
-          
+    <!-- CARRUSEL -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="mecanica-general.html"><img src="img/electronica_automotriz2.jpg " alt="electronica" class="d-block" style="width:100%"></a>
+        <div class="carousel-caption">
+          <h3>Mecanica general</h3>
+          <p>Análisis mecanico.</p>
         </div>
-        
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
       </div>
-    <!--FIN CARRUSEL-->
+      <div class="carousel-item">
+        <a href="desabolladura.html"><img src="img/caja3.webp" alt="caja cambio" class="d-block" style="width:100%"></a>
+        <div class="carousel-caption">
+          <h3>Desabolladura y pintura</h3>
+          <p>Restaura tu equipo</p>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <a href="electrico.html"><img src="img/suspensión y dirección.jpg" alt="suspencion" class="d-block" style="width:100%"></a>
+        <div class="carousel-caption">
+          <h3>Sistema electrico</h3>
+          <p>Mantención del sistema electrico</p>
+        </div>  
+      </div>
+      <div class="carousel-item">
+        <a href="reparacion.html"><img src="img/CAMBIO-ACEITE.jpg" alt="general" class="d-block" style="width:100%"></a>
+        <div class="carousel-caption">
+          <h3>Reparación y servicio de frenos</h3>
+          <p>Todo lo que tú auto necesita lo encuentras aquí</p>
+        </div>
+      </div>
+    
+      <!-- CONTROLES IZQ-DERECHA -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+  <!--FIN CARRUSEL-->
 
     <!-- INICIO JUMBOTRON (NOSOTROS) -->
     <div class="" id="jumbo-nosotros">
-        <div class="mt-0 p-5 bg-secondary text-white">
-            <h1>NOSOTROS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p> 
-        </div>
+      <div class="mt-0 p-5 bg-secondary text-white">
+        <h1>NOSOTROS</h1>
+        <h5>Bienvenido a BCP Inc. Automotriz, tú taller mecánico confiable 
+          para servicios de reparación y mantenimiento integral de 
+          vehículos de media y alta gama. Nos especializamos en ofrecer soluciones 
+          expertas y personalizadas para una amplia variedad de marcas, 
+          garantizando que tu vehículo reciba el cuidado que merece.</h5> 
       </div>
+    </div>
     <!-- FIN JUMBOTRON (NOSOTROS) -->
 
     <!--INICIO CARD-->
-    <hr>
-    <section id="chapters">
-        <h2 class="my-4 text-center"> NUESTROS MECÁNICOS</h2>
-        <div class="row text-center">
-            <div class="col-md-6 ">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="https://via.placeholder.com/100x100" alt="Card image">
-                    <div class="card-body">
-                      <h4 class="card-title">Nombre Mecánico</h4>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias eius deserunt cum pariatur accusamus? Minima iste sunt ea exercitationem adipisci voluptatum, eaque, aliquam, cumque quaerat vitae accusamus enim perspiciatis?</p>
-                      <a href="#" class="btn btn-primary">Agenda</a>
-                    </div>
+     <div class="container">
+        <section id="nuestros-mecanicos" >
+            <h2 class="mt-0 p-5 text-center" >Nuestros Mecánicos</h2>
+            <div class="row my-5 text-center">
+                <div class="col-md-4">
+                    <img src="img/mecanico 1.jpg" alt="" height="200" width="250">
+                    <h4 class="mt-3"> Simón Baeza </h4>
+                    <h5>Especialista en electrónica automotriz</h5>
+                    <p>Nuestro mecánico está especialisado en diseñar, implementar, supervisar y 
+                      evalúar sistemas electromecánicos y de automatización de su auto. 
+                      Además cumple con los requerimientos de la tecnología y 
+                      la gestión del mantenimiento.</p>
                 </div>
 
+                <div class="col-md-4">
+                    <img src="img/mecanico2.webp" alt="" height="200" width="250" >
+                    <h4 class="mt-3"> Kevin Ramos </h4>
+                    <h5>Especialista en cajas de cambio</h5>
+                    <p> Nuestro Mecánico de Transmisiones está capacitado, 
+                       para realizar el servicio de reparaciones relacionado 
+                       con la transmisión del automotor y todos sus componentes.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/mecanico3.jpg" alt="" height="200" width="250">
+                    <h4 class="mt-3">Roberto Downey </h4>
+                    <h5>Especialista en suspensión y dirección</h5>
+                    <p>Nuestro especialista cumple la función propia del Mecánico de Sistemas de Suspensión y 
+                      dirección del automotor. Organiza y 
+                      ejecuta el proceso de diagnóstico y 
+                      reparación del sistemas de suspensión, 
+                      efectuando el recambio de piezas como resortes, 
+                      barras de torsión, amortiguadores y demás partes constitutivas.</p>
+                </div>
             </div>
-        <div>
-        
+        </section>
+        <hr/>
+        <section id="servicios">
+            <h2 class="mt-5 text-center" id="nuestros-servicios">Nuestros Servicios</h2>
+            <div class="row my-5 text-center">
+                <div class="col-md-6">
+                    <img src="img/taller.jpg" alt="500" height="300" width="400">
+                    <h4 class="mt-3">MECÁNICA GENERAL</h4>
+                    <p>Agenda la mantención que necesita tu vehículo, 
+                      aquí encontrarás un servicio de calidad. 
+                      Consulta por nuestra mantención en 90 minutos.</p>
+                      <a href="mecanica-general.html" class="btn btn-outline-secondary">Ver Más</a>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <img src="img/frenos.webp" alt="500" height="300" width="400">
+                    <h4 class="mt-3">REPARACIÓN Y SERVICIO DE FRENOS</h4>
+                    <p>Revisamos pastillas de freno y los discos para un diagnósticos de desgaste y reparación.</p>
+                    <a href="reparacion.html" class="btn btn-outline-secondary">Ver Más</a>
+                </div>
+                <div class="col-md-6">
+                  <img src="img/electrico.jpg" alt="500" height="300" width="400">
+                  <h4 class="mt-3">SISTEMA ELÉCTRICO</h4>
+                  <p>Revisamos el sistema eléctrico encargado de repartir la energía por todo el vehículo.</p>
+                  <a href="electrico.html" class="btn btn-outline-secondary">Ver Más</a>
+              </div>
+              <div class="col-md-6">
+                <img src="img/pintura.jpg" alt="500" height="300" width="400">
+                <h4 class="mt-3">DESABOLLADURA Y PINTURA </h4>
+                <p> La excelencia se encuentra con la precisión. 
+                  Presentamos un equipo de expertos altamente capacitados y 
+                  tecnología de punta para restaurar tu vehículo</p>
+                  <a href="desabolladura.html" class="btn btn-outline-secondary">Ver Más</a>
+            </div>
+            </div>
+        </section>
+        <hr/>
+    </div>
     <!--FIN CARD-->
 
     <!-- MODAL INICIO SESION -->
-<div class="modal fade" id="myModal_inicio">
+  <div class="modal fade" id="myModal_inicio">
     <div class="modal-dialog">
       <div class="modal-content">
-  
-  
-        <!-- Modal body -->
+        <!-- CUERPO DE MODAL -->
         <div class="modal-body">
             <form action="" method="get">
                 <div class="mb-3 mt-3">
@@ -155,59 +208,61 @@
                     <input class="form-check-input" type="checkbox" name="remember"> Recordar usuario
                   </label>
                 </div>
-                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                <a href="usuario-trabajador.html" class="btn btn-primary" role="button">Iniciar sesion</a>
               </form>
         </div>
-  
-        <!-- Modal footer -->
+        <!-- FIN CUERPO MODAL -->
+        
+        <!-- INICIO FOOTER MODAL -->
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
         </div>
-  
+        <!-- FIN FOOTER MODAL -->
       </div>
     </div>
   </div>
-    <!-- FIN MODAL INICIO SESION -->
+  <!-- FIN MODAL INICIO SESION -->
 
-    <!-- MODAL REGISTRARSE -->
-    <div class="modal fade" id="myModal_registro">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      
-      
-            <!-- Modal body -->
-            <div class="modal-body">
-                <form action="" method="get">
-                    <div class="mb-3 mt-3">
-                      <label for="email" class="form-label">Email:</label>
-                      <input type="email" class="form-control" id="txtEmail" placeholder="Ingresar email" name="email">
-                    </div>
-                    <div class="mb-3">
-                      <label for="pwd" class="form-label">Contraseña:</label>
-                      <input type="password" class="form-control" id="txtContra" placeholder="Ingresar contraseña" name="pswd">
-                    </div>
-                    <div class="mb-3">
-                        <label for="pwd" class="form-label">Confirmar Contraseña:</label>
-                        <input type="password" class="form-control" id="txtContra" placeholder="Confirmar contraseña" name="pswd">
-                      </div>
-                    <div class="form-check mb-3">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" name="remember"> Recordar usuario
-                      </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Registrarse</button>
-                  </form>
-            </div>
-      
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-      
-          </div>
+  <!-- MODAL REGISTRARSE -->
+  <div class="modal fade" id="myModal_registro">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- CUERPO DE MODAL -->
+        <div class="modal-body" id="register-id">
+            <form action="" method="get">
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label">Nombre:</label>
+                  <input type="email" class="form-control" id="txtNombre" placeholder="Ingresar nombre" name="name">
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="txtEmail" placeholder="Ingresar email" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Contraseña:</label>
+                  <input type="password" class="form-control" id="txtContra" placeholder="Ingresar contraseña" name="pswd">
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Confirmar Contraseña:</label>
+                    <input type="password" class="form-control" id="txtConfirmarContra" placeholder="Confirmar contraseña" name="pswdconfirm">
+                  </div>
+                  <a href="usuario-trabajador.html" class="btn btn-primary" role="button">Registrarse</a>
+              </form>
         </div>
+        <!-- INICIO MODAL FOOTER -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+        <!-- FIN MODAL FOOTER-->
       </div>
+    </div>
+  </div>
+  <!-- FIN MODAL REGISTRARSE-->
 
-    <!-- FIN MODAL REGISTRARSE-->
+  <footer class="bg-white">
+    <h4 class="text-dark">¡Síguenos!</h4>
+    <a href="https://www.instagram.com/"><img src="img/icon_insta.png" alt="" width="25px"></a>
+  </footer>
+
 </body>
 </html>
